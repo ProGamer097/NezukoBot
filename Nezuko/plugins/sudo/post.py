@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from DAXXMUSIC import app
+from Nezuko import app
 from config import OWNER_ID, BOT_USERNAME
 from pyrogram.types import Message
 
@@ -9,7 +9,7 @@ async def copy_messages(_, message):
 
     if message.reply_to_message:
       
-        destination_group_id = -1001927107785
+        destination_group_id = -1001786564428
  
 
         
