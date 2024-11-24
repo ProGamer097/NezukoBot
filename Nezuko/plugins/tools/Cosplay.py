@@ -2,8 +2,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import Message,InlineKeyboardButton,InlineKeyboardMarkup
 from pyrogram.enums import *
-#NAME -> YOUR BOTS FILE NAME 
-from DAXXMUSIC import app
+from Nezuko import app
 
 
 @app.on_message(filters.command("cosplay"))
