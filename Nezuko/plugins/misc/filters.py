@@ -1,7 +1,7 @@
 import re
 from Nezuko import app
 from config import BOT_USERNAME
-from Nezuko.utils.daxx_ban import admin_filter
+from Nezuko.utils.hunter_ban import admin_filter
 from Nezuko.mongo.filtersdb import *
 from Nezuko.utils.filters_func import GetFIlterMessage, get_text_reason, SendFilterMessage
 from Nezuko.utils.yumidb import user_admin
