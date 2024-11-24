@@ -1,14 +1,14 @@
 import random
 from pyrogram import filters
-from DAXXMUSIC import app
-from DAXXMUSIC import *
+from Nezuko import app
+from Nezuko import *
 from ... import *
 import config
 
 from ...logging import LOGGER
 
-from DAXXMUSIC import app, userbot
-from DAXXMUSIC.core.userbot import *
+from Nezuko import app, userbot
+from Nezuko.core.userbot import *
 
 import asyncio
 
@@ -19,7 +19,7 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from dotenv import load_dotenv
-from DAXXMUSIC.core.userbot import Userbot
+from Nezuko.core.userbot import Userbot
 from datetime import datetime
 
 # Assuming Userbot is defined elsewhere
