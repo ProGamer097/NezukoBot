@@ -2,7 +2,7 @@ import requests
 import random 
 from requests import get
 from bs4 import BeautifulSoup
-from DAXXMUSIC import app
+from Nezuko import app
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto
 
