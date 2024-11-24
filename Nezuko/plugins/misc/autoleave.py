@@ -4,9 +4,9 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from DAXXMUSIC import app
-from DAXXMUSIC.core.call import DAXX, autoend
-from DAXXMUSIC.utils.database import get_client, is_active_chat, is_autoend
+from Nezuko import app
+from Nezuko.core.call import DAXX, autoend
+from Nezuko.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
@@ -14,7 +14,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from DAXXMUSIC.core.userbot import assistants
+            from Nezuko.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
