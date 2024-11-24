@@ -19,10 +19,10 @@ async def get_waifu(client, message):
     up = response.get('url')
 
     if up:
-        button = [[InlineKeyboardButton("SUPPORT", url="https://t.me/naruto_support1")]]
+        button = [[InlineKeyboardButton("SUPPORT", url="https://t.me/hunterXsupport")]]
         markup = InlineKeyboardMarkup(button)
         
-        sent_message = await message.reply_photo(up, caption="BY @ushio_kofun_bot ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ɪɴ 30 ꜱᴇᴄᴏɴᴅ")
+        sent_message = await message.reply_photo(up, caption="BY @Nezuko_RoxBot ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ɪɴ 30 ꜱᴇᴄᴏɴᴅ")
         
         # Delete the sent message after 1 minute
         asyncio.create_task(delete_message_after_timeout(sent_message, 30))
