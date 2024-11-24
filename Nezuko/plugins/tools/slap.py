@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 import requests
 import random
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup  
-from DAXXMUSIC import app
+from Nezuko import app
 
 regex_gif = ["slap"]
 pht = random.choice(regex_gif)
