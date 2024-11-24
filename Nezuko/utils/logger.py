@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from DAXXMUSIC import app
-from DAXXMUSIC.utils.database import is_on_off
+from Nezuko import app
+from Nezuko.utils.database import is_on_off
 from config import LOGGER_ID
 
 
