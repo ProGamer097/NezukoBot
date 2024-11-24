@@ -3,7 +3,7 @@ import requests
 import random
 import asyncio
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup  
-from DAXXMUSIC import app
+from Nezuko import app
 
 async def delete_message_after_timeout(message, timeout):
     await asyncio.sleep(timeout)
