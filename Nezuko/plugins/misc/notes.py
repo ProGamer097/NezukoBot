@@ -1,7 +1,7 @@
 from Nezuko import app
 from config import BOT_USERNAME
 from pyrogram import filters
-from Nezuko.utils.daxx_ban import admin_filter
+from Nezuko.utils.hunter_ban import admin_filter
 from Nezuko.mongo.notesdb import *
 from Nezuko.utils.notes_func import GetNoteMessage, exceNoteMessageSender, privateNote_and_admin_checker
 from Nezuko.utils.yumidb import user_admin
@@ -82,7 +82,7 @@ async def PrivateNote(client, message):
     else:
         if await is_pnote_on(chat_id):
             await message.reply(
-                "Your notes are currently being sent in private. DAXXMUSIC will send a small note with a button which redirects to a private chat.",
+                "Your notes are currently being sent in private. Nezuko will send a small note with a button which redirects to a private chat.",
                 quote=True
             )
         else:
