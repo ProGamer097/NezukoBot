@@ -3,7 +3,7 @@ import random
 import asyncio
 from pyrogram import filters
 from pyrogram.types import Message
-from DAXXMUSIC import app
+from Nezuko import app
 
 waifu_images = [
     "https://telegra.ph/file/ac1e58dc3a033e3db0866.mp4",
