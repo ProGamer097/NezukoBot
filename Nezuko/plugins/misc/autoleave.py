@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from Nezuko import app
-from Nezuko.core.call import DAXX, autoend
+from Nezuko.core.call import hunter, autoend
 from Nezuko.utils.database import get_client, is_active_chat, is_autoend
 
 
