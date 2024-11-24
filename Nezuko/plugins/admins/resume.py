@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from DAXXMUSIC import app
-from DAXXMUSIC.core.call import DAXX
-from DAXXMUSIC.utils.database import is_music_playing, music_on
-from DAXXMUSIC.utils.decorators import AdminRightsCheck
-from DAXXMUSIC.utils.inline import close_markup
+from Nezuko import app
+from Nezuko.core.call import DAXX
+from Nezuko.utils.database import is_music_playing, music_on
+from Nezuko.utils.decorators import AdminRightsCheck
+from Nezuko.utils.inline import close_markup
 from config import BANNED_USERS
 
 
