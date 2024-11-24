@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from Nezuko import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from Nezuko.core.call import DAXX
+from Nezuko.core.call import hunter
 from Nezuko.utils import seconds_to_min, time_to_seconds
 from Nezuko.utils.channelplay import get_channeplayCB
 from Nezuko.utils.decorators.language import languageCB
@@ -290,7 +290,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await DAXX.stream_call(url)
+                await hunter.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -503,7 +503,7 @@ async def play_music(client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@app.on_callback_query(filters.regex("DAXXmousAdmin") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("huntermousAdmin") & ~BANNED_USERS)
 async def DAXXmous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
@@ -514,7 +514,7 @@ async def DAXXmous_check(client, CallbackQuery):
         pass
 
 
-@app.on_callback_query(filters.regex("DAXXPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("hunterPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
