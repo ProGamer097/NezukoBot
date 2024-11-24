@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = DAXX()
+app = hunter()
 api = SafoneAPI()
 userbot = Userbot()
 
