@@ -1,7 +1,7 @@
 import requests
 import base64
 from pyrogram import filters
-from DAXXMUSIC import app
+from Nezuko import app
 
 
 IMGBB_API_KEY = "5a43c16114ccb592a47a790a058fcf65"
