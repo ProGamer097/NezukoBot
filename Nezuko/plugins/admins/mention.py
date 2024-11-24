@@ -2,7 +2,7 @@ import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
 from Nezuko import app
 from pyrogram import filters
-from Nezuko.utils.daxx_ban import admin_filter
+from Nezuko.utils.hunter_ban import admin_filter
 
 
 
