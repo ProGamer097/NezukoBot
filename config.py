@@ -13,10 +13,10 @@ def get_user_list(config, key):
 
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("9552179"))
-API_HASH = getenv("fa6e0313afd8259094486d3256242102")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("6971180345:AAGlJejqje0NqYiBew7rZmOE56m3rGIXP3w")
+BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","HUNTER_KARAN")
 # --------------------------------------------------------
