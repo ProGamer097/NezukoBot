@@ -12,13 +12,13 @@ from pyrogram import filters
 import config
 from Nezuko import app
 from Nezuko.misc import HAPP, SUDOERS, XCB
-from DAXXMUSIC.utils.database import (
+from Nezuko.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
 from Nezuko.utils.decorators.language import language
-from Nezuko.utils.pastebin import DAXXBin
+from Nezuko.utils.pastebin import hunterBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
