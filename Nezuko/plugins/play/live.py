@@ -1,9 +1,9 @@
 from pyrogram import filters
 import random
-from DAXXMUSIC import YouTube, app
-from DAXXMUSIC.utils.channelplay import get_channeplayCB
-from DAXXMUSIC.utils.decorators.language import languageCB
-from DAXXMUSIC.utils.stream.stream import stream
+from Nezuko import YouTube, app
+from Nezuko.utils.channelplay import get_channeplayCB
+from Nezuko.utils.decorators.language import languageCB
+from Nezuko.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
