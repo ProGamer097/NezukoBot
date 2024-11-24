@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import Message
 import time
-from DAXXMUSIC import app
+from Nezuko import app
 
 async def delete_message_after_timeout(message, timeout):
     await asyncio.sleep(timeout)
