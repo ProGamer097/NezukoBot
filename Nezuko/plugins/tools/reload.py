@@ -14,7 +14,7 @@ from pyrogram import filters
 load_dotenv()
 
 from Nezuko import app
-from Nezuko.core.call import DAXX
+from Nezuko.core.call import hunter
 from NezukoUSIC.misc import db
 from Nezuko.utils.database import get_assistant, get_authuser_names, get_cmode
 from Nezuko.utils.decorators import ActualAdminCB, AdminActual, language
