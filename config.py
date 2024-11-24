@@ -1,12 +1,16 @@
-import re
+import json
+import os
 from os import getenv
-# ------------------------------------
-# ------------------------------------
+
 from dotenv import load_dotenv
-from pyrogram import filters
-# ------------------------------------
-# ------------------------------------
+
 load_dotenv()
+
+
+def get_user_list(config, key):
+    with open("{}/Nezuko/{}".format(os.getcwd(), config), "r") as json_file:
+        return json.load(json_file)[key]
+
 # ------------------------------------
 # -----------------------------------------------------
 API_ID = int(getenv("9552179"))
@@ -53,7 +57,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/ProGamer097/Nezuko.git",
+    "https://github.com/hunter-karna/Nezuko.git",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
