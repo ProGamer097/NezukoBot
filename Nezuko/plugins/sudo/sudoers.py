@@ -7,7 +7,7 @@ from pyrogram.types import InputMediaVideo
 from Nezuko.misc import SUDOERS
 from Nezuko.utils.database import add_sudo, remove_sudo
 from Nezuko.utils.decorators.language import language
-from NezukoIC.utils.extraction import extract_user
+from Nezuko.utils.extraction import extract_user
 from Nezuko.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
