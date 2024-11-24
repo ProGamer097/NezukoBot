@@ -3,10 +3,10 @@ from telegram import CallbackQuery
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from DAXXMUSIC import YouTube, app
-from DAXXMUSIC.core.call import DAXX
-from DAXXMUSIC.misc import SUDOERS, db
-from DAXXMUSIC.utils.database import (
+from Nezuko import YouTube, app
+from Nezuko.core.call import DAXX
+from Nezuko.misc import SUDOERS, db
+from Nezuko.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -23,12 +23,12 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-from DAXXMUSIC.utils.database import get_assistant
-from DAXXMUSIC.utils.decorators.language import languageCB
-from DAXXMUSIC.utils.formatters import seconds_to_min
-from DAXXMUSIC.utils.inline import close_markup, stream_markup, stream_markup_timer
-from DAXXMUSIC.utils.stream.autoclear import auto_clean
-from DAXXMUSIC.utils.thumbnails import get_thumb
+from Nezuko.utils.database import get_assistant
+from Nezuko.utils.decorators.language import languageCB
+from Nezuko.utils.formatters import seconds_to_min
+from Nezuko.utils.inline import close_markup, stream_markup, stream_markup_timer
+from Nezuko.utils.stream.autoclear import auto_clean
+from Nezuko.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
