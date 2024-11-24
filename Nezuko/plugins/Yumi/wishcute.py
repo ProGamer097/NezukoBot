@@ -2,9 +2,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
 import requests
-from DAXXMUSIC import app 
+from Nezuko import app 
 
-SUPPORT_CHAT = "naruto_support1"
+SUPPORT_CHAT = "HunterXsupport"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
