@@ -19,7 +19,7 @@ async def get_waifu(client, message):
     up = response.get('url')
 
     if up:
-        button = [[InlineKeyboardButton("SUPPORT", url="https://t.me/hunter_support")]]
+        button = [[InlineKeyboardButton("SUPPORT", url="https://t.me/hunterxsupport")]]
         markup = InlineKeyboardMarkup(button)
         
         sent_message = await message.reply_video(up, caption="BY @Nezuko_RoxBot ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ɪɴ 30 ꜱᴇᴄᴏɴᴅ")
