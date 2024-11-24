@@ -1,4 +1,4 @@
-from Nezuko.core.bot import DAXX
+from Nezuko.core.bot import hunter
 from Nezuko.core.dir import dirr
 from Nezuko.core.git import git
 from Nezuko.core.userbot import Userbot
