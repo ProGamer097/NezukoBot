@@ -1,11 +1,11 @@
 import re
-from DAXXMUSIC import app
+from Nezuko import app
 from config import BOT_USERNAME
-from DAXXMUSIC.utils.daxx_ban import admin_filter
-from DAXXMUSIC.mongo.filtersdb import *
-from DAXXMUSIC.utils.filters_func import GetFIlterMessage, get_text_reason, SendFilterMessage
-from DAXXMUSIC.utils.yumidb import user_admin
-from DAXXMUSIC.utils.yumidb import *
+from Nezuko.utils.daxx_ban import admin_filter
+from Nezuko.mongo.filtersdb import *
+from Nezuko.utils.filters_func import GetFIlterMessage, get_text_reason, SendFilterMessage
+from Nezuko.utils.yumidb import user_admin
+from Nezuko.utils.yumidb import *
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
