@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Nezuko import app
-from Nezuko.core.call import DAXX
+from Nezuko.core.call import hunter
 from Nezuko.misc import SUDOERS, db
 from Nezuko.utils import AdminRightsCheck
 from Nezuko.utils.database import is_active_chat, is_nonadmin_chat
