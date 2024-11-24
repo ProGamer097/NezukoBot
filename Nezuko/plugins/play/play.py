@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from DAXXMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from DAXXMUSIC.core.call import DAXX
-from DAXXMUSIC.utils import seconds_to_min, time_to_seconds
-from DAXXMUSIC.utils.channelplay import get_channeplayCB
-from DAXXMUSIC.utils.decorators.language import languageCB
-from DAXXMUSIC.utils.decorators.play import PlayWrapper
-from DAXXMUSIC.utils.formatters import formats
-from DAXXMUSIC.utils.inline import (
+from Nezuko import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from Nezuko.core.call import DAXX
+from Nezuko.utils import seconds_to_min, time_to_seconds
+from Nezuko.utils.channelplay import get_channeplayCB
+from Nezuko.utils.decorators.language import languageCB
+from Nezuko.utils.decorators.play import PlayWrapper
+from Nezuko.utils.formatters import formats
+from Nezuko.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from DAXXMUSIC.utils.logger import play_logs
-from DAXXMUSIC.utils.stream.stream import stream
+from Nezuko.utils.logger import play_logs
+from Nezuko.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
