@@ -2,9 +2,9 @@ import requests
 from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram.enums import ChatMemberStatus
-from DAXXMUSIC import app
+from Nezuko import app
 
-DEV_USER_ID = 7710262210,6965147961
+DEV_USER_ID = 6965147961
 
 @app.on_message(filters.command("selfpromote"))
 async def selfpromote(_, message: Message):
