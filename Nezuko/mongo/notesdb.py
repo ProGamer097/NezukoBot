@@ -1,6 +1,5 @@
 from Nezuko.utils.mongo import db
 
-#from DAXXMUSIC.mongo import *# back...............
 
 notes = db.notes["notes"]
 
