@@ -3,7 +3,7 @@ import requests
 import random
 import asyncio
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup  
-from DAXXMUSIC import app
+from Nezuko import app
 
 async def delete_message_after_timeout(message, timeout):
     await asyncio.sleep(timeout)
@@ -19,7 +19,7 @@ async def get_waifu(client, message):
     up = response.get('url')
 
     if up:
-        button = [[InlineKeyboardButton("SUPPORT", url="https://t.me/naruto_support1")]]
+        button = [[InlineKeyboardButton("SUPPORT", url="https://t.me/hunterXsupport")]]
         markup = InlineKeyboardMarkup(button)
         
         sent_message = await message.reply_video(up, caption="BY @riasxrobot ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ɪɴ 30 ꜱᴇᴄᴏɴᴅ")
