@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from DAXXMUSIC import LOGGER, app, userbot
-from DAXXMUSIC.core.call import DAXX
-from DAXXMUSIC.misc import sudo
-from DAXXMUSIC.plugins import ALL_MODULES
-from DAXXMUSIC.utils.database import get_banned_users, get_gbanned
+from Nezuko import LOGGER, app, userbot
+from Nezuko.core.call import hunter
+from Nezuko.misc import sudo
+from Nezuko.plugins import ALL_MODULES
+from Nezuko.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,27 +35,27 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("DAXXMUSIC.plugins" + all_module)
-    LOGGER("DAXXMUSIC.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁ro🥳...")
+        importlib.import_module("Nezuko.plugins" + all_module)
+    LOGGER("Nezuko.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁ro🥳...")
     await userbot.start()
-    await DAXX.start()
+    await Nezuko.start()
     try:
-        await DAXX.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await hunter.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("DAXXMUSIC").error(
+        LOGGER("Nezuko").error(
             "𝗣𝗹S 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\nNARUTO 𝗕𝗢𝗧 𝗦𝗧𝗢𝗣........"
         )
         exit()
     except:
         pass
-    await DAXX.decorators()
-    LOGGER("DAXXMUSIC").info(
-        "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗠𝗥 NARUTO☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
+    await hunter.decorators()
+    LOGGER("Nezuko").info(
+        "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗠𝗥 karan☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("DAXXMUSIC").info("𝗦𝗧𝗢𝗣 NARUTO 𝗠𝗨𝗦𝗜𝗖🎻 𝗕𝗢𝗧..")
+    LOGGER("Nezuko").info("𝗦𝗧𝗢𝗣 karan 𝗠𝗨𝗦𝗜𝗖🎻 𝗕𝗢𝗧..")
 
 
 if __name__ == "__main__":
