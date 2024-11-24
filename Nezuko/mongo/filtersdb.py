@@ -1,4 +1,4 @@
-from DAXXMUSIC.utils.mongo import db
+from Nezuko.utils.mongo import db
 
 filters = db.filters["filters"] 
 
