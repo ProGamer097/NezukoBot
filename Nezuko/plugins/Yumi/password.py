@@ -1,6 +1,6 @@
 import random, os
 from pyrogram import Client, filters, enums 
-from DAXXMUSIC import app
+from Nezuko import app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
