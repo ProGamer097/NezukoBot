@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Nezuko import app
-from Nezuko.core.call import DAXX
+from Nezuko.core.call import hunter
 from Nezuko.utils.database import set_loop
 from Nezuko.utils.decorators import AdminRightsCheck
 from Nezuko.utils.inline import close_markup
