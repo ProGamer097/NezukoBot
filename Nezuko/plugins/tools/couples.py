@@ -7,15 +7,14 @@ from pyrogram import *
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import *
 
-#BOT FILE NAME
-from DAXXMUSIC import app as app
-from DAXXMUSIC.mongo.couples_db import _get_image, get_couple
+from Nezuko import app as app
+from Nezuko.mongo.couples_db import _get_image, get_couple
 
 POLICE = [
     [
         InlineKeyboardButton(
             text="meow iam nuzeko cutei",
-            url=f"https://t.me/hunter_support",
+            url=f"https://t.me/hunterXsupport",
         ),
     ],
 ]
