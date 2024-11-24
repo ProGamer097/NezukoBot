@@ -2,13 +2,13 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.types import Message
 from strings import get_string, helpers
-from DAXXMUSIC import app
+from Nezuko import app
 from pyrogram.types import InputMediaVideo
-from DAXXMUSIC.misc import SUDOERS
-from DAXXMUSIC.utils.database import add_sudo, remove_sudo
-from DAXXMUSIC.utils.decorators.language import language
-from DAXXMUSIC.utils.extraction import extract_user
-from DAXXMUSIC.utils.inline import close_markup
+from Nezuko.misc import SUDOERS
+from Nezuko.utils.database import add_sudo, remove_sudo
+from Nezuko.utils.decorators.language import language
+from NezukoIC.utils.extraction import extract_user
+from Nezuko.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
@@ -61,7 +61,7 @@ async def sudoers_list(client, message: Message):
 async def check_sudo_list(client, callback_query: CallbackQuery):
     keyboard = []
     if callback_query.from_user.id not in SUDOERS:
-        return await callback_query.answer("bhai Naruto sa maan lo sudo me dekha ni sakta owner ni mana Kiya hai meko soory", show_alert=True)
+        return await callback_query.answer("bhai karan sa maag lo sudo me dekha ni sakta owner ne mana Kiya hai meko soory", show_alert=True)
     else:
         user = await app.get_users(OWNER_ID)
 
