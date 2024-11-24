@@ -1,8 +1,8 @@
 import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
-from DAXXMUSIC import app
+from Nezuko import app
 from pyrogram import filters
-from DAXXMUSIC.utils.daxx_ban import admin_filter
+from Nezuko.utils.daxx_ban import admin_filter
 
 
 
