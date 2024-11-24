@@ -4,8 +4,7 @@ import requests
 from pyrogram import Client, filters
 from pyrogram.types import InputMediaPhoto, Message
 
-# REPO => Your Bots File Name
-from DAXXMUSIC import app
+from Nezuko import app
 
 
 # Command handler for the '/bingimg' command
