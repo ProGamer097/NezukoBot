@@ -1,4 +1,4 @@
-from DAXXMUSIC import app
+from Nezuko import app
 from pyrogram.errors import RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
 from os import environ
@@ -16,7 +16,7 @@ from asyncio import sleep
 from pyrogram import filters, Client, enums
 from pyrogram.enums import ParseMode
 from logging import getLogger
-from DAXXMUSIC.utils.daxx_ban import admin_filter
+from Nezuko.utils.daxx_ban import admin_filter
 from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
 from pyrogram.types import *
@@ -28,15 +28,15 @@ import os
 import re
 import asyncio
 import time
-from DAXXMUSIC.utils.database import add_served_chat
+from Nezuko.utils.database import add_served_chat
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from DAXXMUSIC.utils.database import get_assistant
+from Nezuko.utils.database import get_assistant
 import asyncio
-from DAXXMUSIC.misc import SUDOERS
-from DAXXMUSIC.mongo.afkdb import PROCESS
+from Nezuko.misc import SUDOERS
+from Nezuko.mongo.afkdb import PROCESS
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
-from DAXXMUSIC import app
+from Nezuko import app
 import asyncio
 import random
 from pyrogram import Client, filters
