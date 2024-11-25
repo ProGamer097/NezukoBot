@@ -1,7 +1,7 @@
 import json
 import os
 from os import getenv
-from NezukoBot import filters 
+from pyrogram import filters
 from dotenv import load_dotenv
 
 load_dotenv()
