@@ -1,17 +1,12 @@
-import json
 import re
-import os
 from os import getenv
-from pyrogram import filters
+# ------------------------------------
+# ------------------------------------
 from dotenv import load_dotenv
-
+from pyrogram import filters
+# ------------------------------------
+# ------------------------------------
 load_dotenv()
-
-
-def get_user_list(config, key):
-    with open("{}/Nezuko/{}".format(os.getcwd(), config), "r") as json_file:
-        return json.load(json_file)[key]
-
 # ------------------------------------
 # -----------------------------------------------------
 API_ID = int(getenv("API_ID"))
@@ -19,13 +14,13 @@ API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","HUNTER_KARAN")
+OWNER_USERNAME = getenv("OWNER_USERNAME","iam_daxx")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "Nezuko_RoxBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "NexikoBot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "Nezuko")
+BOT_NAME = getenv("BOT_NAME" , "Nexiko")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "Nezuko_chan")
+ASSUSERNAME = getenv("ASSUSERNAME" , "MissYumikoo")
 # ---------------------------------------------------------
 
 
@@ -40,10 +35,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1001836376079))
+LOGGER_ID = int(getenv("LOGGER_ID", -1001919135283))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 6965147961))
+OWNER_ID = int(getenv("OWNER_ID", 6664582540))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -72,8 +67,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/hunterXsupport")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/hunterXsupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/naruto_support1")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/naruto_support1")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
